@@ -7,7 +7,7 @@ tagged release publishes them as installable `.claudepet` packages together with
 
 ## Installing an avatar
 
-- **From the app** (claude-pet ≥ 0.4): right-click the creature → *Avatar* → *Library*, pick
+- **From the app** (claude-pet ≥ 0.3.0): right-click the creature → *Avatar* → *Library*, pick
   one. Updates appear in the same menu when this repository ships a newer version; *Remove
   current avatar…* uninstalls it.
 - **By hand:** download a `.claudepet` from the [latest release](../../releases/latest) and
