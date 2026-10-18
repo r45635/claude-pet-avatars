@@ -1,0 +1,62 @@
+# Validate, pack reproducibly, and (on a tag) sign and publish the catalog.
+#
+# The validator is the main repository's own tooling, run from a sibling checkout: the
+# format rules live in ONE place and cannot drift. Packing is deterministic (fixed mtimes,
+# sorted entries) and this workflow keeps that honest by packing twice and comparing hashes.
+name: library
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          repository: r45635/claude-pet
+          path: claude-pet-main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+
+      - name: Pack twice, compare (determinism), validate
+        run: |
+          node scripts/build-index.ts --main claude-pet-main
+          (cd dist && shasum -a 256 *.claudepet | sort) > first.sum
+          rm -rf dist
+          node scripts/build-index.ts --main claude-pet-main
+          (cd dist && shasum -a 256 *.claudepet | sort) > second.sum
+          diff first.sum second.sum || { echo "::error::packing is not deterministic"; exit 1; }
+          cat first.sum
+
+      # The same key as the main repository's releases: the app refuses an unsigned index.
+      - name: Sign index.json
+        if: github.ref_type == 'tag'
+        env:
+          RELEASE_SIGNING_KEY: ${{ secrets.RELEASE_SIGNING_KEY }}
+        run: |
+          [ -n "$RELEASE_SIGNING_KEY" ] || { echo "::error::RELEASE_SIGNING_KEY secret is missing"; exit 1; }
+          node claude-pet-main/scripts/sign-release.ts dist/index.json
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: catalog
+          path: dist/*
+
+      - name: Release
+        if: github.ref_type == 'tag'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release view "$TAG" >/dev/null 2>&1 \
+            || gh release create "$TAG" --title "$TAG" --generate-notes --verify-tag
+          gh release upload "$TAG" dist/* --clobber
