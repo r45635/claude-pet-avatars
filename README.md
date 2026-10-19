@@ -10,6 +10,9 @@ tagged release publishes them as installable `.claudepet` packages together with
 - **From the app** (claude-pet ≥ 0.3.0): right-click the creature → *Avatar* → *Library*, pick
   one. Updates appear in the same menu when this repository ships a newer version; *Remove
   current avatar…* uninstalls it.
+- **From a terminal** (claude-pet ≥ 0.3.1; what an agent should use):
+  `~/.claude-pet/app/claude-pet avatars list`, then `… avatars install <id>`, `… avatars update`,
+  `… avatars remove <id>`. From a clone of claude-pet: `npm run avatars -- install <id>`.
 - **By hand:** download a `.claudepet` from the [latest release](../../releases/latest) and
   drop it on the creature.
 
