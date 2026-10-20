@@ -53,5 +53,6 @@ MIT — © 2026 Vincent Cruvellier, see [LICENSE](LICENSE). The license covers t
 **including the avatar artwork**; an individual avatar may declare a different (SPDX) license
 in its manifest, which then applies to that avatar's files.
 
-> The same 9 avatars currently also live in the main repository as examples and test
-> fixtures; this library is the distribution channel. Deduplicating the two is future work.
+This library is the only home of the ready-made avatars: the main repository no longer
+keeps copies (its tests use their own fixtures, and validate these when this clone sits next
+to it).
