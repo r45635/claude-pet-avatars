@@ -1,0 +1,7 @@
+/* Only transform/opacity animate. IDLE stays perfectly still. */
+.critter { --skin-base: #65d9b4; --skin-hot: #ffb47b; --skin-bad: #ff8394; }
+@keyframes wiggle {
+  0%,100% { transform: rotate(0deg) scaleX(1); }
+  25% { transform: rotate(-3deg) scaleX(.97); }
+  75% { transform: rotate(3deg) scaleX(1.03); }
+}
