@@ -1,0 +1,17 @@
+name: 🐞 Problem with an avatar
+description: An avatar looks wrong, fails to install, or will not update.
+labels: [bug]
+body:
+  - type: input
+    id: avatar
+    attributes:
+      label: Which avatar?
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens?
+      description: A screenshot helps a lot. For install problems, the output of `~/.claude-pet/app/claude-pet avatars list`.
+    validations:
+      required: true
