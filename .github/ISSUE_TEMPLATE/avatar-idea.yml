@@ -1,0 +1,16 @@
+name: 🎨 Avatar idea
+description: A look you would love to see — for someone to draw (maybe you).
+labels: [avatar idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should it look like?
+      description: A character, a style, a mood for each state… references and sketches welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: drawing
+    attributes:
+      label: Will you draw it?
+      options: ["Yes, I'm on it", "Maybe, with some help", "No — up for grabs"]
