@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+<g class="critter" data-state="IDLE"><g class="shaker">
+<ellipse cx="80" cy="148" rx="41" ry="5" fill="#102d38" opacity=".17"/>
+<g class="body">
+<path class="shell" d="M30 110 C30 84 44 77 49 58 C55 34 67 33 80 43 C93 32 111 38 116 60 C120 78 133 89 130 111 C128 132 112 143 80 145 C48 143 32 132 30 110Z" fill="#65d9b4" stroke="#247e76" stroke-width="3.5" stroke-linejoin="round"/>
+<path d="M45 86 C40 106 45 128 63 133" fill="none" stroke="#b9ffe0" stroke-width="6" stroke-linecap="round" opacity=".65"/>
+<ellipse cx="72" cy="58" rx="18" ry="7" fill="#c5ffe5" opacity=".48" transform="rotate(-17 72 58)"/>
+<ellipse cx="105" cy="115" rx="19" ry="8" fill="#1f998a" opacity=".15"/>
+<g class="opt on-HIGH_LOAD"><path d="M57 36 Q52 16 62 12 Q67 7 68 20 L76 35" fill="#ffb47b" stroke="#e47c55" stroke-width="2"/><path d="M89 35 L97 19 Q100 11 106 17 Q111 24 103 42" fill="#ffb47b" stroke="#e47c55" stroke-width="2"/></g>
+<g class="opt on-IDLE"><path d="M55 93 Q64 100 73 93 M87 93 Q96 100 105 93" fill="none" stroke="#174d55" stroke-width="4" stroke-linecap="round"/><path d="M74 115 Q80 119 86 115" fill="none" stroke="#174d55" stroke-width="3" stroke-linecap="round"/></g>
+<g class="eyes opt on-THINKING on-READING on-CODING on-TOOL_CALL on-WAITING on-ERROR"><ellipse cx="63" cy="93" rx="8" ry="11" fill="#184a54"/><ellipse cx="97" cy="93" rx="8" ry="11" fill="#184a54"/><circle cx="66" cy="89" r="3" fill="#fff"/><circle cx="100" cy="89" r="3" fill="#fff"/></g>
+<g class="opt on-DONE"><path d="M54 92 Q63 81 72 92 M88 92 Q97 81 106 92" fill="none" stroke="#174d55" stroke-width="4" stroke-linecap="round"/><path d="M69 109 Q80 125 91 109 Z" fill="#184a54"/></g>
+<g class="opt on-HIGH_LOAD"><ellipse cx="63" cy="93" rx="10" ry="13" fill="#fff"/><ellipse cx="97" cy="93" rx="10" ry="13" fill="#fff"/><circle cx="63" cy="96" r="4" fill="#174d55"/><circle cx="97" cy="96" r="4" fill="#174d55"/><path d="M68 115 Q74 110 80 115 Q86 120 92 115" fill="none" stroke="#174d55" stroke-width="3" stroke-linecap="round"/></g>
+<g class="opt on-NOSIGNAL" stroke="#6e8f90" stroke-width="4" stroke-linecap="round"><path d="M55 93 h16 M89 93 h16 M75 115 h10"/></g>
+<ellipse class="opt on-THINKING on-WAITING" cx="80" cy="115" rx="4" ry="5" fill="#174d55"/>
+<path class="opt on-READING on-CODING on-TOOL_CALL" d="M73 114 Q80 119 87 114" fill="none" stroke="#174d55" stroke-width="3" stroke-linecap="round"/>
+<path class="opt on-ERROR" d="M71 120 Q80 110 89 120" fill="none" stroke="#174d55" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="49" cy="110" rx="7" ry="3.5" fill="#ff8fa6" opacity=".65"/><ellipse cx="111" cy="110" rx="7" ry="3.5" fill="#ff8fa6" opacity=".65"/>
+<g class="opt on-READING"><path d="M45 117 L78 123 L115 117 L115 134 L80 139 L45 134Z" fill="#f9ffed" stroke="#328777" stroke-width="1.6"/><path d="M80 123 v16 M52 125 l20 3 M88 128 l20 -3" stroke="#89ada1" stroke-width="2" fill="none"/></g>
+</g>
+<g class="opt on-THINKING" fill="#8ed6fe"><circle cx="115" cy="61" r="3"/><circle cx="126" cy="48" r="5"/><circle cx="140" cy="34" r="8"/></g>
+<g class="opt on-CODING"><rect x="118" y="42" rx="5" width="33" height="24" fill="#184a54"/><path d="M128 49 l-6 5 6 5 M139 49 l6 5 -6 5" stroke="#adffe2" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+<g class="opt on-TOOL_CALL"><path d="M133 37 l-10 18 8 6 -7 13 21 -22 -9 -4 7 -11Z" fill="#f5b74c" stroke="#b77e28" stroke-width="1"/></g>
+<g class="opt on-WAITING"><path d="M115 30 h28 a6 6 0 0 1 6 6 v22 a6 6 0 0 1 -6 6 h-10 l-9 10 v-10 h-9 a6 6 0 0 1 -6 -6 v-22 a6 6 0 0 1 6 -6Z" fill="#ffc97d" stroke="#ba854a" stroke-width="2"/><text x="129" y="54" text-anchor="middle" font-size="22" font-weight="bold" fill="#634521">?</text></g>
+<g class="opt on-DONE"><circle cx="134" cy="44" r="14" fill="#6ed5a1" stroke="#248873" stroke-width="2"/><path d="M126 43 l6 6 10 -11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g class="opt on-ERROR"><circle cx="134" cy="44" r="14" fill="#ff8394"/><path d="M134 36 v11 M134 52 v1" stroke="#fff" stroke-width="4" stroke-linecap="round"/></g>
+<g class="opt on-HIGH_LOAD" stroke="#ffad69" stroke-width="3" stroke-linecap="round"><path d="M27 76 l-12 -6 M29 98 h-14 M133 77 l12 -7 M133 98 h12"/></g>
+<g class="opt on-IDLE" fill="#6f9b9b" font-size="14" font-weight="bold"><text x="119" y="60">z</text><text x="133" y="48" font-size="10">z</text></g>
+</g></g></svg>
