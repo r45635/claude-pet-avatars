@@ -3,7 +3,7 @@
   "id": "slime",
   "name": "Slime",
   "names": {"en": "Slime", "fr": "Blob"},
-  "author": "Claude Pet community",
+  "author": "claude-pet",
   "license": "MIT",
   "version": "1.0.0",
   "kind": "svg",
