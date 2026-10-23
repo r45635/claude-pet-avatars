@@ -4,7 +4,7 @@
 
 **Looks for [claude-pet](https://github.com/r45635/claude-pet), the tiny creature that shows what Claude Code is doing.**
 
-<img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-ghost.gif" width="110" alt="Ghost"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-alien.gif" width="110" alt="Alien"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-mint.gif" width="110" alt="Mint"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-cowboy.gif" width="110" alt="Cowboy"> <img src="docs/media/avatar-slime.gif" width="110" alt="Slime"> <img src="docs/media/avatar-baptawan.gif" width="110" alt="Baptawan"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-halloween.gif" width="110" alt="Halloween"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-noel.gif" width="110" alt="Noël">
+<img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-ghost.gif" width="110" alt="Ghost"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-alien.gif" width="110" alt="Alien"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-mint.gif" width="110" alt="Mint"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-cowboy.gif" width="110" alt="Cowboy"> <img src="docs/media/avatar-slime.gif" width="110" alt="Slime"> <img src="docs/media/avatar-baptawan.gif" width="110" alt="Baptawan"> <img src="docs/media/avatar-chloe-princess.gif" width="110" alt="ChloePrincess"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-halloween.gif" width="110" alt="Halloween"> <img src="https://raw.githubusercontent.com/r45635/claude-pet/main/docs/media/avatar-noel.gif" width="110" alt="Noël">
 
 Picking one takes two clicks. Drawing one takes an afternoon.
 
@@ -43,6 +43,7 @@ No claude-pet yet? It runs on Macs with Apple Silicon:
 | Cowboy | `cowboy` | SVG | a hat that follows the mood |
 | Slime | `slime` | SVG | a face for every state, wiggles on tool calls |
 | Baptawan | `baptawan` | pictures | a picture for each of the nine states (AI-assisted artwork) |
+| ChloePrincess | `chloe-princess` | pictures | a candy princess, nine states (AI-assisted artwork) |
 | Halloween, Noël, Nouvel An, Pâques, Saint-Valentin | `halloween`, `noel`, `nouvel-an`, `paques`, `saint-valentin` | SVG | seasonal |
 
 ## Is it safe?
