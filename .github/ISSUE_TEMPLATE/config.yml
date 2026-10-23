@@ -3,3 +3,9 @@ contact_links:
   - name: A problem with claude-pet itself
     url: https://github.com/r45635/claude-pet/issues/new/choose
     about: The creature, its install, Claude Code — in the main repository.
+  - name: A security problem
+    url: https://github.com/r45635/claude-pet/security/advisories/new
+    about: An avatar that gets out of its box, or anything unsafe. Please report it privately, not in a public issue.
+  - name: Questions and help
+    url: https://github.com/r45635/claude-pet-avatars/discussions
+    about: Stuck while making an avatar? Ask here, beginner questions welcome.
