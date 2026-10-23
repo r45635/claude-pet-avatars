@@ -1,5 +1,5 @@
 name: 🐞 Problem with an avatar
-description: An avatar looks wrong, fails to install, or will not update.
+description: An avatar looks wrong, won't install or update, or raises a rights or content concern.
 labels: [bug]
 body:
   - type: input
@@ -8,10 +8,23 @@ body:
       label: Which avatar?
     validations:
       required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - It looks wrong
+        - It won't install or update
+        - Rights or content (it uses my work, shows me without my consent, or shouldn't be here)
+    validations:
+      required: true
   - type: textarea
     id: what
     attributes:
       label: What happens?
-      description: A screenshot helps a lot. For install problems, the output of `~/.claude-pet/app/claude-pet avatars list`.
+      description: >-
+        A screenshot helps a lot. For an install problem, paste the output of `claude-pet avatars list`
+        (or `~/.claude-pet/app/claude-pet avatars list` without Homebrew). For a rights concern, tell us
+        what is yours. We take the avatar out of the library in the next release.
     validations:
       required: true
