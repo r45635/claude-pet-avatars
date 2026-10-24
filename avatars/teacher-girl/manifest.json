@@ -1,0 +1,40 @@
+{
+  "format": 1,
+  "id": "teacher-girl",
+  "name": "Teacher-Girl",
+  "names": {
+    "en": "Teacher-Girl",
+    "fr": "Teacher-Girl"
+  },
+  "author": "Vincent Cruvellier (family reference; AI-assisted artwork)",
+  "license": "MIT",
+  "version": "1.0.0",
+  "kind": "images",
+  "states": {
+    "IDLE": "idle.png",
+    "THINKING": "thinking.png",
+    "READING": "reading.png",
+    "CODING": "coding.png",
+    "TOOL_CALL": "tool_call.png",
+    "HIGH_LOAD": "high_load.png",
+    "WAITING": "waiting.png",
+    "DONE": "done.png",
+    "ERROR": "error.png"
+  },
+  "anchors": {
+    "feet": [
+      80,
+      146
+    ],
+    "why": [
+      90,
+      28
+    ]
+  },
+  "hitbox": {
+    "cx": 80,
+    "cy": 88,
+    "rx": 52,
+    "ry": 56
+  }
+}
