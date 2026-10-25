@@ -58,9 +58,9 @@ An avatar is a file made by someone you don't know, so here is what it can and c
   contents, not its name, and sizes are capped.
 - **It can't phone home.** The creature's window blocks every request that leaves the app, so
   an avatar can't load anything from the internet or track you.
-- **You get exactly what was published.** The library's catalog is signed with claude-pet's
-  release key. The app refuses a catalog that is unsigned or altered, and any avatar whose
-  SHA-256 checksum doesn't match the catalog.
+- **You get exactly what was published.** The library's catalog is signed with its own key,
+  pinned in claude-pet. The app refuses a catalog that is unsigned or altered, and any avatar
+  whose SHA-256 checksum doesn't match the catalog.
 - **A person looks at every avatar** before it is merged, and CI checks it against the app's
   own rules. Nothing reaches the app until a release is published.
 - **Browsing the library sends nothing about you.** The app downloads the catalog from GitHub,
@@ -110,13 +110,16 @@ of claude-pet `main`, so the rules can't drift apart. CI also packs each avatar
 same bytes and the published SHA-256 means something. CI packs everything twice and compares
 the results.
 
-On a tag `v*`, CI also signs `index.json` with the claude-pet release key and publishes these
-release assets:
+On a tag `v*`, a separate CI job (it alone holds the keys, and runs no third-party code) signs
+`index.json` and publishes these release assets:
 
 - `<id>.claudepet`: one per avatar
 - `index.json`: `{format, generated, avatars:[{id, name, names, version, kind, license,
   author, file, sha256, bytes}]}`
-- `index.json.sig`: ed25519 over `index.json`, in base64
+- `index.json.catalog.sig`: ed25519 by the catalog key over `claude-pet avatar catalog v1\n`
+  followed by `index.json`, in base64 — what claude-pet v0.5.5 and later check
+- `index.json.sig`: ed25519 by the claude-pet release key over `index.json`, in base64 — for
+  older apps, until they have all updated
 
 The stable catalog URL is
 `https://github.com/r45635/claude-pet-avatars/releases/latest/download/index.json`.
