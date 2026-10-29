@@ -17,8 +17,8 @@ No claude-pet yet? It runs on Macs with Apple Silicon:
 ([other ways](https://github.com/r45635/claude-pet#readme)).
 
 - **From the creature:** right-click → **Avatar** → **Library**, then pick one. When a newer
-  version comes out, **Update <name>…** appears in the same menu. **Remove current avatar…**
-  takes you back to the classic look.
+  version comes out, **Update <name>…** appears in the same menu (**Update all avatars (n)…**
+  when several do). **Remove current avatar…** takes you back to the classic look.
 - **From a terminal** (this is also the way for an agent, since it can't click a menu):
 
   ```bash

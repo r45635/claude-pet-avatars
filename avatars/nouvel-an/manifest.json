@@ -4,8 +4,9 @@
   "name": "Nouvel An",
   "author": "claude-pet",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "kind": "svg",
   "svg": "creature.svg",
-  "css": "skin.css"
+  "css": "skin.css",
+  "thumb": "thumb.png"
 }

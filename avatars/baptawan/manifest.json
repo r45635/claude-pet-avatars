@@ -8,7 +8,7 @@
   },
   "author": "Vincent Cruvellier (AI-assisted artwork)",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "kind": "images",
   "states": {
     "IDLE": "idle.png",
@@ -36,5 +36,6 @@
     "cy": 91,
     "rx": 66,
     "ry": 68
-  }
+  },
+  "thumb": "thumb.png"
 }
