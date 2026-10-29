@@ -4,7 +4,7 @@
   "name": "Ghost",
   "author": "claude-pet",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "kind": "images",
   "states": {
     "IDLE": "idle.svg",
@@ -34,5 +34,6 @@
     "cy": 86,
     "rx": 46,
     "ry": 58
-  }
+  },
+  "thumb": "thumb.png"
 }

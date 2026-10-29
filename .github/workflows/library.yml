@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           repository: r45635/claude-pet
-          ref: 128a38cae716e6e9c4e314824c0aeff0a9864597
+          ref: 310a5b640496ea9c2d5680175cd0ce7c3699fd8a
           path: claude-pet-main
           persist-credentials: false
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
@@ -63,7 +63,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           repository: r45635/claude-pet
-          ref: 128a38cae716e6e9c4e314824c0aeff0a9864597
+          ref: 310a5b640496ea9c2d5680175cd0ce7c3699fd8a
           path: claude-pet-main
           persist-credentials: false
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
