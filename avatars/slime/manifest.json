@@ -2,25 +2,68 @@
   "format": 1,
   "id": "slime",
   "name": "Slime",
-  "names": {"en": "Slime", "fr": "Blob"},
+  "names": {
+    "en": "Slime",
+    "fr": "Blob"
+  },
   "author": "claude-pet",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "kind": "svg",
   "svg": "creature.svg",
   "css": "skin.css",
   "animations": {
     "profile": "classic",
     "states": {
-      "IDLE": {"keyframes": null},
-      "THINKING": {"keyframes": "bob", "dur": 2100, "ease": "ease-in-out", "amp": 0.8},
-      "READING": {"keyframes": "nod", "dur": 1700, "amp": 0.6},
-      "CODING": {"keyframes": "tap", "dur": "auto", "amp": 0.75},
-      "TOOL_CALL": {"keyframes": "wiggle", "dur": 1200, "amp": 1},
-      "HIGH_LOAD": {"keyframes": "shake", "dur": "auto", "amp": 0.8},
-      "WAITING": {"keyframes": "perk", "dur": 2000, "amp": 0.7},
-      "DONE": {"enter": {"keyframes": "hop", "dur": 700, "count": 2}},
-      "ERROR": {"enter": {"keyframes": "flinch", "dur": 520, "count": 1}}
+      "IDLE": {
+        "keyframes": null
+      },
+      "THINKING": {
+        "keyframes": "bob",
+        "dur": 2100,
+        "ease": "ease-in-out",
+        "amp": 0.8
+      },
+      "READING": {
+        "keyframes": "nod",
+        "dur": 1700,
+        "amp": 0.6
+      },
+      "CODING": {
+        "keyframes": "tap",
+        "dur": "auto",
+        "amp": 0.75
+      },
+      "TOOL_CALL": {
+        "keyframes": "wiggle",
+        "dur": 1200,
+        "amp": 1
+      },
+      "HIGH_LOAD": {
+        "keyframes": "shake",
+        "dur": "auto",
+        "amp": 0.8
+      },
+      "WAITING": {
+        "keyframes": "perk",
+        "dur": 2000,
+        "amp": 0.7
+      },
+      "DONE": {
+        "enter": {
+          "keyframes": "hop",
+          "dur": 700,
+          "count": 2
+        }
+      },
+      "ERROR": {
+        "enter": {
+          "keyframes": "flinch",
+          "dur": 520,
+          "count": 1
+        }
+      }
     }
-  }
+  },
+  "thumb": "thumb.png"
 }

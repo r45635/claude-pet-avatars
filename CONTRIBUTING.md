@@ -74,6 +74,9 @@ Put your pictures in a folder `avatars/<id>/` next to a `manifest.json`:
   language, optionally.
 - `license` is **required here**: an SPDX identifier such as `MIT` (preferred) or `CC-BY-4.0`.
 - Files sit flat in the folder, with no subfolders.
+- `thumb` (`thumb.png`) is the avatar's picture in the app's menu. You don't need to make it:
+  a maintainer generates it with claude-pet's `node scripts/thumbs.ts avatars/<id>` before
+  the release.
 - Drew it off-centre, or in an unusual shape? Add `anchors` and a `hitbox`; see
   [the common box](https://github.com/r45635/claude-pet/blob/main/docs/AVATARS.md#the-common-box).
 - For an SVG avatar, your own animations, and the rest of the format, see
